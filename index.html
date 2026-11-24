@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Unit 7 Test · Success</title>
+<meta name="description" content="Cutting Edge Pre-intermediate · Unit 7 test: Vocabulary, Grammar, Reading (50 questions)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap">
+<style>
+:root{
+  --bg:#eef1f4;--card:#ffffff;--ink:#18233a;--muted:#5d6878;--line:#d6dce4;
+  --accent:#6a4fc4;--accent-soft:#ece7fb;--accent-ink:#ffffff;--yellow:#f4c430;--yellow-soft:#fdf3cf;
+  --good:#1f8a5b;--good-bg:#e3f4ec;--bad:#c43c3c;--bad-bg:#fbe7e7;
+  --display:"Bricolage Grotesque",system-ui,sans-serif;--body:"Atkinson Hyperlegible",system-ui,sans-serif;--ar:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;color:var(--ink);font:18px/1.55 var(--body);background:var(--bg);
+  -webkit-user-select:none;user-select:none}
+input,select{-webkit-user-select:text;user-select:text}
+.wrap{max-width:620px;margin:0 auto;padding:18px max(16px,env(safe-area-inset-left)) 120px}
+.ubanner{margin:0 0 14px;border-radius:16px;overflow:hidden;background:#fbfaf7;border:1px solid var(--line)}
+.ubanner img{display:block;width:100%;height:auto}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:1.15}
+h1{font-size:1.9rem;margin:0 0 4px}
+.sub{color:var(--muted);margin:0;font-size:.95rem}
+.ar{font-family:var(--ar);direction:rtl}
+.screen{display:none;flex-direction:column;gap:16px}
+.screen.on{display:flex}
+.head{display:flex;gap:12px;align-items:center}
+.head img{width:92px;height:auto;flex:none}
+.who{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:center;margin-top:16px}
+.who label{font-weight:700;white-space:nowrap}
+.who input,.who select{min-width:0;width:100%;font:1.05rem var(--body);padding:12px 14px;border-radius:10px;border:1.5px solid var(--line);background:#fff;color:var(--ink)}
+.who input:focus,.who select:focus{outline:none;border-color:var(--accent)}
+.btn{font:700 1.05rem var(--body);padding:13px 22px;border-radius:10px;border:0;background:var(--ink);color:#fff;cursor:pointer;min-height:52px}
+.btn.ghost{background:var(--card);color:var(--ink);border:1.5px solid var(--line)}
+.btn.acc{background:var(--accent);color:var(--accent-ink)}
+.btn:disabled{opacity:.35;cursor:default}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.msg{color:var(--bad);font-weight:700;min-height:1.4em;margin:0}
+/* quiz */
+.top{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:.88rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.tag{font-size:.74rem;letter-spacing:.06em;text-transform:uppercase;font-weight:700;color:var(--accent);border:1.5px solid var(--accent);padding:2px 10px;border-radius:99px}
+.bar{height:6px;background:var(--line);border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .3s}
+.passage{max-height:46vh;overflow:auto;background:var(--yellow-soft);border-color:#ecdca0}
+.passage h3{margin:0 0 8px;font-size:1.25rem}
+.passage p{margin:0 0 10px;font-size:1rem}
+.stem{font-family:var(--display);font-weight:600;font-size:1.3rem;line-height:1.35;margin:0 0 14px;text-wrap:balance}
+.stem .n{color:var(--accent);margin-right:6px}
+.opts{display:grid;gap:10px}
+.opt{display:flex;align-items:center;gap:12px;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;cursor:pointer;background:#fff}
+.opt input{width:22px;height:22px;accent-color:var(--accent);flex:none;margin:0}
+.opt:has(input:checked){border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
+.nav{position:fixed;left:0;right:0;bottom:0;z-index:5;background:linear-gradient(to top,var(--bg) 70%,rgba(238,241,244,0));padding:16px 16px calc(16px + env(safe-area-inset-bottom))}
+.nav .in{max-width:620px;margin:0 auto;display:flex;justify-content:space-between;gap:12px}
+.nav .btn{flex:0 1 46%}
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.jump button{font:700 1rem var(--body);min-width:46px;min-height:44px;border-radius:10px;border:1.5px solid var(--bad);background:var(--bad-bg);color:var(--bad);cursor:pointer}
+/* result */
+.score{font-family:var(--display);font-weight:800;font-size:3.2rem;line-height:1.05;font-variant-numeric:tabular-nums}
+.parts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.parts div{background:var(--accent-soft);border-radius:10px;padding:10px 4px;text-align:center;font-size:.92rem}
+.parts b{display:block;font-size:1.3rem;font-variant-numeric:tabular-nums}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.rv{display:flex;flex-direction:column;gap:6px;padding:14px 0;border-top:1.5px dashed var(--line)}
+.rv .q{font-weight:700}
+.rv .a{padding:8px 12px;border-radius:10px}
+.rv .a.ok{background:var(--good-bg);color:var(--good)}
+.rv .a.no{background:var(--bad-bg);color:var(--bad)}
+.rv .why{color:var(--muted);font-size:.95rem}
+footer{color:var(--muted);font-size:.85rem;text-align:center}
+@media print{.nav,.row,#send{display:none!important}body{background:#fff}.rv{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <figure class="ubanner"><img src="img/banner-u7.webp" width="1200" height="291" alt="Unit 7 · Success"></figure>
+
+  <!-- START -->
+  <section class="screen on" id="s-start">
+    <div class="card">
+      <div class="head"><img src="img/quiz.webp" width="300" height="200" alt=""><div>
+        <h1>Unit 7 Test</h1>
+        <p class="sub">Cutting Edge Pre-intermediate · 50 questions: Vocabulary, Grammar, Reading</p></div></div>
+      <div class="who">
+        <label for="nm">Name:</label>
+        <input id="nm" type="text" placeholder="e.g. Ahmed Ali" maxlength="40" autocomplete="name">
+        <label for="eid">ET ID#:</label>
+        <input id="eid" type="text" placeholder="e.g. 4412345" maxlength="20" inputmode="numeric" autocomplete="off">
+        <label for="grp">Group:</label>
+        <select id="grp"><option value="">Choose…</option><option>A</option><option>B</option><option>C</option><option>D</option><option>E</option><option>F</option><option>G</option><option>H</option><option>I</option><option>J</option><option>K</option><option>L</option><option>M</option></select>
+      </div>
+    </div>
+    <p class="sub">Write your details and press <b>Start</b>. There is one question on each page. Press <b>Next</b> to go forward and <b>Previous</b> to go back.</p>
+    <p class="msg" id="smsg"></p>
+    <button class="btn acc" id="start" type="button">Start ➜</button>
+    <footer>© 2026 Metwally · Cutting Edge Pre-intermediate · Unit 7</footer>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="screen" id="s-quiz">
+    <div class="top"><span class="tag" id="qpart"></span><span id="qnum"></span></div>
+    <div class="bar"><i id="qbar"></i></div>
+    <div class="card passage" id="qpass" hidden></div>
+    <div class="card" id="qcard"></div>
+  </section>
+
+  <!-- CHECK BLANKS -->
+  <section class="screen" id="s-blank">
+    <div class="card">
+      <h2 style="margin:0 0 6px;font-size:1.5rem">Some questions are empty</h2>
+      <p class="sub">Tap a number to go back to that question, or press Finish anyway.</p>
+      <div class="jump" id="jump"></div>
+    </div>
+    <div class="row"><button class="btn ghost" id="back" type="button">← Back</button><button class="btn" id="force" type="button">Finish anyway</button></div>
+  </section>
+
+  <!-- RESULT -->
+  <section class="screen" id="s-res">
+    <div class="card">
+      <div class="head"><img src="img/results.webp" width="300" height="200" alt=""><div>
+        <div class="sub" id="rname"></div>
+        <div class="score" id="rscore"></div></div></div>
+      <div id="rmsg" style="margin-top:8px"></div>
+      <div class="parts"><div>Vocabulary<b id="rA"></b></div><div>Grammar<b id="rB"></b></div><div>Reading<b id="rC"></b></div></div>
+      <p class="sub" id="send" style="margin-top:12px"></p>
+      <div class="row" style="margin-top:12px">
+        <button class="btn ghost" id="resend" type="button" hidden>Send again</button>
+        <button class="btn acc" id="again" type="button">Try again</button>
+        <button class="btn ghost" id="print" type="button">Print / Save as PDF</button>
+      </div>
+    </div>
+    <div class="card"><div class="head"><img src="img/review.webp" width="300" height="200" alt="" style="width:72px"><h2 style="margin:0;font-size:1.5rem">Your answers</h2></div><div id="review"></div></div>
+    <footer>© 2026 Metwally · Cutting Edge Pre-intermediate · Unit 7</footer>
+  </section>
+</div>
+
+<nav class="nav" id="nav" hidden><div class="in">
+  <button class="btn ghost" id="prev" type="button">← Previous</button>
+  <button class="btn" id="next" type="button">Next →</button>
+</div></nav>
+
+<script>
+/* ===== Where results go (same Google Form / Sheet as the Unit 6 test) ===== */
+/* Google Form "pre-filled link". Questions in this order: Name, ET ID, Group, Score, Percentage, Test */
+const FORM_LINK = "https://docs.google.com/forms/d/e/1FAIpQLSfIyKgOjaWwy1AVIxiXCwNE-YpUmJNfm5rVknf0qRN1GU0QSw/viewform?usp=pp_url&entry.1420658327=1&entry.988858162=2&entry.1107879298=3&entry.1171550918=4&entry.844294529=5&entry.1724463703=6";
+const TEST_NAME = "Unit 7 Test";
+
+const T1 = {title:"Text 1 – Nasser's blog", text:[
+ "Hi everyone! My name is Nasser and I'm 24. I've written this blog for three years. I write about my ambitions and my achievements.",
+ "My greatest achievement so far is learning how to drive. I passed my driving test last year, after three tries! I've also just started my own small business – I sell phone cases online. I've already sold 200 cases.",
+ "It's always been my dream to go round the world. I haven't been abroad yet, but I'm saving money. One thing I'd love to do one day is write a book about my travels.",
+ "Thanks for reading. Please post a comment below!"]};
+const T2 = {title:"Text 2 – Fahad's success", text:[
+ "Fahad is a computer game designer from Dammam. He has worked for a big games company for six years. Before that, he was a volunteer at a children's hospital for two years.",
+ "When Fahad was 15, he uploaded his first game to a video-sharing site. It got over 50,000 hits in one month! A company saw the video and sponsored him to go to university.",
+ "Fahad got his inspiration from his father, an engineer. “My father has always helped me,” he says. Fahad's latest game has already sold one million copies. His next ambition is to start his own company."]};
+
+/* Each question: [part, stem, [options a–c], index of correct option, short reason] */
+const Q = [
+["A","My dream is to ___ round the world.",["go","get","have"],0,"go round the world = يلف العالم."],
+["A","She'd love to ___ on television one day.",["become","appear","earn"],1,"appear on television = يطلع في التلفزيون."],
+["A","They're going to ___ married next summer.",["have","become","get"],2,"get married = يتزوج."],
+["A","I want to ___ my own business and work for myself.",["start","earn","buy"],0,"start your own business = يفتح مشروعه الخاص."],
+["A","He wants to ___ €1 million before he's 30.",["become","earn","go"],1,"earn money = يكسب فلوس من شغله."],
+["A","Which phrase is NOT correct?",["get a degree","become a millionaire","go a millionaire"],2,"نقول become a millionaire، مو go."],
+["A","I want to save this film on my laptop. I need to ___ it.",["upload","download","post"],1,"download = تنزّل شي من النت لجهازك."],
+["A","I ___ my holiday photos onto the website last night.",["downloaded","searched","uploaded"],2,"upload = ترفع شي من جهازك للنت."],
+["A","I ___ for information about the hotel on the internet.",["searched","posted","uploaded"],0,"search for = تدوّر على شي في النت."],
+["A","Google is the most famous ___ in the world.",["blog","search engine","hit"],1,"search engine = محرك بحث."],
+["A","His video got more than 10,000 ___ in one day.",["blogs","hits","sites"],1,"hits = عدد الزيارات أو المشاهدات."],
+["A","I write a ___ about my travels every week.",["blog","hit","search engine"],0,"blog = مدونة، تكتب فيها تجاربك."],
+["A","I use a ___ to chat with my old school friends.",["search engine","video-sharing site","social-networking site"],2,"social-networking site = موقع تواصل اجتماعي."],
+["A","Which noun can NOT go with “download”?",["a game","a site","a film"],1,"تنزّل game أو film، بس الموقع ما تنزّله."],
+["A","something you have done which you are proud of",["an achievement","an ambition","a dream"],0,"achievement = إنجاز سويته وتفتخر فيه."],
+["A","something you want to do one day",["a hit","an achievement","an ambition"],2,"ambition = طموح، شي تبي تسويه يوم من الأيام."],
+["A","He works as a ___ – he helps people but doesn't get any money.",["volunteer","sponsor","millionaire"],0,"volunteer = متطوع، يشتغل بدون راتب."],
+["A","She first ___ in public when she was four.",["inspired","performed","sponsored"],1,"perform in public = يغني أو يمثل قدام الناس."],
+
+["B","We ___ our car for three years.",["have had","has had","had have"],0,"we + have + V3 (had)."],
+["B","She ___ two books, but she hasn't become famous.",["'s wrote","have written","'s written"],2,"she + has ('s) + written."],
+["B","___ you ever appeared on TV?",["Did","Have","Has"],1,"سؤال Present perfect مع you: Have you …?"],
+["B","A: Has your brother ever been abroad?  B: Yes, he ___.",["has","have","did"],0,"الجواب القصير مع he: Yes, he has."],
+["B","We ___ Amy for months.",["haven't saw","hasn't seen","haven't seen"],2,"النفي: haven't + V3 (seen)."],
+["B","What is the past participle of “take”?",["took","taken","taked"],1,"take – took – taken."],
+["B","I ___ in Jeddah for two years, and then I moved to Riyadh.",["have lived","lived","live"],1,"الشي خلص (انتقل للرياض)، فنستخدم Past simple مع for."],
+["B","I ___ my best friend for eight years. We're still friends.",["knew","'ve known","know"],1,"لسه يعرفه لين الحين: Present perfect مع for."],
+["B","Dinosaurs ___ on Earth for 160 million years.",["lived","have lived","has lived"],0,"الديناصورات انقرضت، الشي خلص: Past simple."],
+["B","___ have you lived in this city?",["How often","How long","When"],1,"How long = كم صار لك؟ (سؤال عن المدة)."],
+["B","How long did you work there? – ___",["I've worked there for two years.","I work there for two years.","I worked there for two years."],2,"did = شي خلص، فالجواب بالـ Past simple."],
+["B","We haven't told Laura about the accident ___.",["already","yet","just"],1,"yet تجي في آخر جملة النفي والسؤال."],
+["B","Look! My sister has ___ bought a new phone.",["just","yet","ago"],0,"just = توه، من شوي."],
+["B","I've ___ been abroad. This is my first trip.",["already","ever","never"],2,"never = عمري ما سويته."],
+["B","I ___ him yesterday.",["have seen","saw","seen"],1,"yesterday وقت خلص: Past simple."],
+["B","Kate got married two years ___.",["ago","yet","for"],0,"ago بعد المدة مع Past simple: two years ago."],
+["B","So far this year, we ___ £500.",["saved","have saved","save"],1,"so far = لين الحين: Present perfect."],
+["B","A: Would you like a sandwich?  B: No, thanks. I've ___ eaten.",["already","yet","ago"],0,"already = خلاص أكلت."],
+["B","Which sentence is correct?",["I've finished already my homework.","I've already finished my homework.","I already have finish my homework."],1,"already تجي بين have و V3."],
+["B","Which sentence gives the “news”?",["He was in a video a few years ago.","He looked very happy.","I've just seen my friend on TV!"],2,"نعطي الخبر بالـ Present perfect، والتفاصيل بالـ Past simple."],
+
+["C1","How long has Nasser written his blog?",["for two years","for one year","for three years"],2,"“I've written this blog for three years.”"],
+["C1","What is his greatest achievement so far?",["learning how to drive","starting a business","writing a book"],0,"“My greatest achievement so far is learning how to drive.”"],
+["C1","When did he pass his driving test?",["last month","last year","three years ago"],1,"“I passed my driving test last year”"],
+["C1","What does Nasser sell online?",["phone cases","books","photos"],0,"“I sell phone cases online.”"],
+["C1","Has Nasser been abroad?",["Yes, many times.","Yes, once.","No, not yet."],2,"“I haven't been abroad yet”"],
+["C1","What would he love to do one day?",["appear on television","write a book about his travels","buy a flat"],1,"“One thing I'd love to do one day is write a book about my travels.”"],
+["C2","How long has Fahad worked for the games company?",["for six years","for two years","for fifteen years"],0,"“He has worked for a big games company for six years.”"],
+["C2","What did he do before that?",["He was an engineer.","He was a volunteer at a hospital.","He studied abroad."],1,"“he was a volunteer at a children's hospital for two years”"],
+["C2","Where did he upload his first game?",["to a blog","to a social-networking site","to a video-sharing site"],2,"“he uploaded his first game to a video-sharing site”"],
+["C2","How many hits did it get in one month?",["over 50,000","over 5,000","over one million"],0,"“It got over 50,000 hits in one month!”"],
+["C2","Who sponsored him to go to university?",["his father","a company","a hospital"],1,"“A company saw the video and sponsored him”"],
+["C2","What is Fahad's next ambition?",["to go round the world","to become a volunteer","to start his own company"],2,"“His next ambition is to start his own company.”"]
+];
+
+const PART_NAME = {A:"Vocabulary", B:"Grammar", C:"Reading"};
+const L = "abc", KEY = "ce-u7-test1";
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+let st = {name:"", eid:"", grp:"", ans:{}, i:0, done:false};
+try { Object.assign(st, JSON.parse(localStorage.getItem(KEY) || "{}")); } catch(e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(st)); } catch(e) {} };
+$("nm").value = st.name; $("eid").value = st.eid; $("grp").value = st.grp;
+["nm","eid","grp"].forEach(id => { const el = $(id); const f = () => { st[{nm:"name",eid:"eid",grp:"grp"}[id]] = el.value; save(); };
+  el.addEventListener("input", f); el.addEventListener("change", f); });
+
+function show(id){ document.querySelectorAll(".screen").forEach(s => s.classList.toggle("on", s.id === id));
+  $("nav").hidden = id !== "s-quiz"; window.scrollTo(0,0); }
+
+function passageHtml(t){ return `<h3>${esc(t.title)}</h3>` + t.text.map(p => `<p>${esc(p)}</p>`).join(""); }
+const isAr = s => /[؀-ۿ]/.test(s);
+
+function render(){
+  const i = st.i, q = Q[i], p = q[0][0];
+  $("qpart").textContent = `Part ${p} · ${PART_NAME[p]}`;
+  $("qnum").textContent = `Question ${i+1} / ${Q.length}`;
+  $("qbar").style.width = ((i+1) / Q.length * 100) + "%";
+  const pass = q[0] === "C1" ? T1 : q[0] === "C2" ? T2 : null;
+  $("qpass").hidden = !pass; if (pass) { $("qpass").innerHTML = passageHtml(pass); $("qpass").scrollTop = 0; }
+  $("qcard").innerHTML = `<p class="stem"><span class="n">${i+1}.</span>${esc(q[1])}</p><div class="opts" role="radiogroup">` +
+    q[2].map((o,j) => `<label class="opt"><input type="radio" name="a" value="${j}" ${st.ans[i]==j?"checked":""}><span><b>${L[j]})</b> ${esc(o)}</span></label>`).join("") + `</div>`;
+  $("qcard").querySelectorAll("input").forEach(r => r.onchange = () => { st.ans[i] = +r.value; save(); });
+  $("prev").disabled = i === 0;
+  $("next").textContent = i === Q.length - 1 ? "Finish ✓" : "Next →";
+  $("next").classList.toggle("acc", i === Q.length - 1);
+  window.scrollTo(0,0);
+}
+function go(i){ st.i = Math.max(0, Math.min(Q.length - 1, i)); save(); render(); }
+$("prev").onclick = () => go(st.i - 1);
+$("next").onclick = () => { if (st.i < Q.length - 1) go(st.i + 1); else finish(false); };
+
+$("start").onclick = () => {
+  const need = [["nm","your name"],["eid","your ET ID#"],["grp","your group"]].find(([id]) => !$(id).value.trim());
+  if (need) { $("smsg").textContent = `Please write ${need[1]} first.`; $(need[0]).focus(); return; }
+  $("smsg").textContent = ""; show("s-quiz"); render();
+};
+
+function blanks(){ return Q.map((q,i) => i).filter(i => st.ans[i] === undefined); }
+function finish(force){
+  const b = blanks();
+  if (b.length && !force) {
+    $("jump").innerHTML = b.map(i => `<button type="button" data-i="${i}">${i+1}</button>`).join("");
+    show("s-blank"); return;
+  }
+  grade(true);
+}
+$("jump").onclick = e => { const t = e.target.closest("button[data-i]"); if (t) { show("s-quiz"); go(+t.dataset.i); } };
+$("back").onclick = () => { show("s-quiz"); render(); };
+$("force").onclick = () => finish(true);
+
+let lastResult = null;
+function grade(send){
+  const score = {A:[0,0],B:[0,0],C:[0,0]};
+  let rv = "";
+  Q.forEach((q,i) => { const p = q[0][0], a = st.ans[i], ok = a === q[3]; score[p][1]++; if (ok) score[p][0]++;
+    rv += `<div class="rv"><div class="q">${i+1}. ${esc(q[1])}</div>` +
+      `<div class="a ${ok?"ok":"no"}">${ok ? "✓ " : "✗ "}Your answer: ${a === undefined ? "—" : L[a] + ") " + esc(q[2][a])}</div>` +
+      (ok ? "" : `<div class="a ok">Correct: ${L[q[3]]}) ${esc(q[2][q[3]])}</div>`) +
+      `<div class="why${isAr(q[4]) ? " ar" : ""}">${esc(q[4])}</div></div>`; });
+  const total = score.A[0] + score.B[0] + score.C[0], pct = Math.round(total / Q.length * 100);
+  $("rname").textContent = `${st.name} · ET ID# ${st.eid} · Group ${st.grp}`;
+  $("rscore").textContent = `${total} / ${Q.length}`;
+  $("rmsg").innerHTML = `${pct}% — ` + (pct >= 85 ? "Excellent!" : pct >= 60 ? "Good. Check the questions in red." : "Keep practising. Review Unit 7 and try again.");
+  for (const p of "ABC") $("r"+p).textContent = `${score[p][0]} / ${score[p][1]}`;
+  $("review").innerHTML = rv;
+  lastResult = {name:st.name, eid:st.eid, grp:st.grp, total, max:Q.length, pct};
+  show("s-res");
+  if (send && !st.done) { st.done = true; save(); sendResult(); }
+  else if (st.done) $("send").textContent = "✓ Result sent to the teacher.";
+}
+
+function formTarget(){
+  if (!FORM_LINK) return null;
+  try { const u = new URL(FORM_LINK);
+    const ids = [...u.searchParams.keys()].filter(k => /^entry\.\d+$/.test(k));
+    return {url: u.origin + u.pathname.replace(/\/(viewform|edit|formResponse)$/, "") + "/formResponse", ids};
+  } catch(e) { return null; }
+}
+async function sendResult(){
+  const s = $("send"), rb = $("resend"); rb.hidden = true;
+  const f = formTarget();
+  if (!f) { s.textContent = ""; return; }
+  s.textContent = "Sending your result to the teacher…";
+  const r = lastResult, body = new URLSearchParams();
+  [r.name, r.eid, r.grp, `${r.total} / ${r.max}`, r.pct + "%", TEST_NAME].forEach((v,i) => { if (f.ids[i]) body.append(f.ids[i], v); });
+  try { await fetch(f.url, {method:"POST", mode:"no-cors", body});
+    s.textContent = "✓ Result sent to the teacher.";
+  } catch(e) {
+    s.textContent = "✗ The result was not sent. Check the internet and press Send again.";
+    rb.hidden = false;
+  }
+}
+$("resend").onclick = sendResult;
+$("again").onclick = () => { st.ans = {}; st.i = 0; st.done = false; save(); show("s-start"); };
+$("print").onclick = () => window.print();
+
+/* resume where the student was */
+if (st.done) grade(false);
+else if (st.name && st.eid && st.grp && Object.keys(st.ans).length) { show("s-quiz"); render(); }
+
+/* keyboard: ← → */
+document.addEventListener("keydown", e => { if (!$("s-quiz").classList.contains("on")) return;
+  if (e.key === "ArrowRight") $("next").click(); if (e.key === "ArrowLeft" && st.i > 0) $("prev").click(); });
+
+/* light copy protection */
+document.addEventListener("contextmenu", e => { if (!e.target.closest("input")) e.preventDefault(); });
+document.addEventListener("copy", e => e.preventDefault());
+</script>
+</body>
+</html>
